@@ -1,0 +1,107 @@
+.close {
+  display: none!important;
+  background: blue;
+}
+.ims_popup {
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 100;
+  min-width: 100%;
+
+  &__body {
+    box-shadow: .25rem .75rem .625rem .0625rem rgba(0, 0, 0, .13);
+    overflow: auto;
+    border-radius: .9375rem;
+    width: 40%;
+    max-height: 80vh;
+    position: absolute;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    background-color: #fff;
+
+    &__logo {
+      background-color: #ffca18;
+      height: 3.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin-top: 35px;
+        width: 5.6875rem;
+      }
+
+    }
+
+    &__image {
+      padding: 1.25rem 2.5rem 0;
+    }
+
+    &__link {
+      display: flex;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        color: #fefefe;
+        text-align: center;
+        height: 4.375rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-size: 201% 100%;
+        background-position: 100% 100%;
+        background-image: linear-gradient(90deg, #fff33e 50%, #3e2b1a 0);
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+        text-decoration: none;
+
+        &:hover {
+          color: #0a0a0a;
+          background-position: 0 100%;
+        }
+
+        &::before {
+          content: ">";
+          font-size: 30px;
+          width: .8125rem;
+          height: 1.0625rem;
+          background-size: .625rem;
+          background-repeat: no-repeat;
+          color: #b39d8a;
+          margin-right: .75rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ims_popup__body {
+    width: 60%;
+  }
+}
+#ims_popup__close {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  color: #fff;
+  transition: all .2s;
+  font-size: 2.875rem;
+  font-weight: 700;
+  text-decoration: none;
+}

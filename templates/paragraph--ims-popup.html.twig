@@ -1,0 +1,25 @@
+<div id='ims_popup' class="ims_popup" role="dialog" aria-modal="true" aria-labelledby="popup-title" aria-describedby="popup-description">
+  <div class="ims_popup__body">
+
+    <a id="ims_popup__close" aria-label="Close popup" href="javascript:void(0);">&times;</a>
+
+    <div class="ims_popup__body__logo">
+      <img src="{{ file_url(content.field_ims_popup_logo[0]['#item'].entity.uri.value) }}"
+           alt="{{ content.field_ims_popup_logo[0]['#item'].alt }}">
+    </div>
+
+    <img
+      class="ims_popup__body__image"
+      alt="{{ content.field_ims_popup_image[0]['#item'].alt }}"
+      loading="lazy"
+      src="{{ file_url(content.field_ims_popup_image[0]['#item'].entity.uri.value) }}"
+    >
+
+    <div class="ims_popup__body__link">
+      <a aria-label="Learn more" href="{{ content.field_ims_popup_link[0]['#url'] }}" >
+        {{ content.field_ims_popup_link['#items'][0].title }}
+      </a>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ims_popup
+label: ims_popup
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

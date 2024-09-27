@@ -1,0 +1,7 @@
+name: 'Popup module'
+type: module
+description: 'Module for popup window'
+core_version_requirement: ^10 || ^11
+
+libraries:
+  - ims_popup/ims_popup

@@ -1,0 +1,7 @@
+ims_popup:
+  version: 1.x
+  css:
+    theme:
+      assets/dist/css/ims_popup.css: {}
+  js:
+    assets/dist/js/ims_popup.js: {}

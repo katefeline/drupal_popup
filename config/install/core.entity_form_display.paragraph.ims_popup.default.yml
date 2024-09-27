@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ims_popup.field_ims_popup_image
+    - field.field.paragraph.ims_popup.field_ims_popup_link
+    - field.field.paragraph.ims_popup.field_ims_popup_logo
+    - field.field.paragraph.ims_popup.field_ims_popup_timer
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.ims_popup
+  module:
+    - image
+    - link
+id: paragraph.ims_popup.default
+targetEntityType: paragraph
+bundle: ims_popup
+mode: default
+content:
+  field_ims_popup_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_ims_popup_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_ims_popup_logo:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_ims_popup_timer:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
