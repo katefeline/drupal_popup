@@ -5,3 +5,7 @@ ims_popup:
       assets/dist/css/ims_popup.css: {}
   js:
     assets/dist/js/ims_popup.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
